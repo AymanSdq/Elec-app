@@ -1,0 +1,19 @@
+{
+  "name": "elecapp",
+  "version": "0.0.1",
+  "description": "New App to learn Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "reactjs"
+  ],
+  "author": "Ayman Sedqi",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^32.0.1"
+  }
+}
