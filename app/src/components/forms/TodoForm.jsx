@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 function TodoForm() {
 
   // The initial value of the form
-  const [descValue , setDescValue] = useState();
+  const [descValue , setDescValue] = useState("");
 
 
   const handleChange = (event) => {
@@ -15,7 +15,7 @@ function TodoForm() {
 
 
   // On submit function
-  const onSubmit = (event) => {
+  const handleSubmit = (event) => {
 
     event.preventDefault();
 
@@ -25,7 +25,7 @@ function TodoForm() {
   return (
     <div>
 
-      <form onSubmit={onsubmit}>
+      <form onSubmit={handleSubmit}>
 
           <input value={descValue} onChange={handleChange} name='description' id='description' />
 
