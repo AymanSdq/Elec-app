@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Layout from './components/Layout';
 import Work from './pages/Work';
+import IndexPage from './pages/IndexPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
 
         <Route path='/' element={<Layout />}>
+          <Route path='/' element={<IndexPage />} />
           <Route path='/work' element={<Work />} />
         </Route>
 
