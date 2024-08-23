@@ -4,18 +4,31 @@ import { Outlet } from 'react-router-dom'
 function Layout() {
   return (
 
-    <div>
-      <p>This is our layout</p>
+    <section className=' px-24'>
 
-      <ul>
+          {/* The Header of the page */}
+          <div className='w-full  py-8 flex justify-between items-center'>
 
-        <li><a href="/">Home</a></li>
-        <li><a href="/work">Work</a></li>
+            <h1 className='text-xl font-bold'><a href="/">Electron app</a></h1>
 
-      </ul>
+          <div>
+              <ul className='flex gap-8 items-center'>
 
-      <Outlet />
-    </div>
+                <li className='text-md'><a href="/work">Work</a></li>
+
+                <li className='text-md'><a href="/">Parent</a></li>
+
+                <img src="/computer.webp" alt="User" className='w-10 h-10 rounded-full' />
+
+              </ul>
+          </div>
+
+          </div>
+
+
+
+          <Outlet />
+    </section>
 
   )
 }

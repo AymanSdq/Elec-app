@@ -15,7 +15,7 @@ function TodoForm() {
 
   // On submit function
   const handleSubmit = (event) => {
-    
+
     event.preventDefault();
     console.log(descValue);
 
@@ -26,13 +26,13 @@ function TodoForm() {
 
 
   return (
-    <div>
+    <div className='w-full shadow-lg border rounded-md my-6 py-8'>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='flex flex-col items-center gap-4'>
 
-          <input value={descValue} onChange={handleChange} name='description' id='description' />
+          <input placeholder='Description ' className='border-2 w-[80%] px-4 py-2 rounded ' value={descValue} onChange={handleChange} name='description' id='description' />
 
-          <button type="submit">Submit</button>
+          <button className="bg-green-600  w-[50%] py-2 text-white rounded-lg" type="submit">Submit</button>
 
       </form>
 
