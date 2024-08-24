@@ -36,5 +36,5 @@ app.whenReady().then(createMainWindow);
 
 
 ipcMain.on('submit:todoForm' , (event, opts) => {
-    console.log(opts)
+    console.log({"Data : " : opts})
 })
