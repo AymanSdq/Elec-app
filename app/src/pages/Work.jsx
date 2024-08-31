@@ -32,7 +32,7 @@ function Work() {
       <h1>List of TODO's : </h1>
       {listTask.map((task) => (
         <div className='w-full'  key={task._id}>
-          <p >{task.description}</p>
+          <p className='text-sm' >{task.description}</p>
           <p>{task.doneOrNot}</p>
         </div>
       ))}
