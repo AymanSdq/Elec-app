@@ -9,7 +9,7 @@ function createMainWindow() {
 
       width : 1000,
       height : 600,
-
+    
       webPreferences : {
 
         contextIsolation : true,
